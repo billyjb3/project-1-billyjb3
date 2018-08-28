@@ -1,0 +1,159 @@
+*{
+    margin:0;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.page{
+    width: 100vw;
+    height: 100vh;
+    background-color: #909090;
+    background-image: url("res/mistyTreesBack.jpg");
+    background-size: cover;
+}
+
+.pt5{
+    padding-top: 5em;
+}
+
+.pt4{
+    padding-top: 4em;
+}
+
+.pt3{
+    padding-top: 3em;
+}
+
+.pt2{
+    padding-top: 2em;
+}
+
+.pt1{
+    padding-top: 1em;
+}
+
+.mt5{
+    margin-top: 5em;
+}
+
+.mt4{
+    margin-top: 4em;
+}
+
+.mt3{
+    margin-top: 3em;
+}
+
+#loginBox{
+    position: absolute;
+    width: 27em;
+    height: 37em;
+    bottom: 0;
+    left: 0;
+    right:0;
+    top:0;
+    margin: auto;
+    background-color: #303030;
+    color: #808080;
+    opacity: .75;
+    border: solid 1px #101010;
+}
+
+#registerBox{
+    position: absolute;
+    width: 27em;
+    height: 37em;
+    margin: auto;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #303030;
+    color: #808080;
+    opacity: .75;
+    border: solid 1px #101010;
+    display: none;
+}
+
+.boxHeader{
+    width: 100%;
+    height: 4em;
+    line-height: 4em;
+    text-align: center;
+    font-weight: bold;
+    background-color: #151515
+}
+
+.loginMain{
+    width: 100%;
+    height: 85%;
+    text-align: center;
+}
+
+.inputGroup{
+    width: 75%;
+    margin: auto;
+    padding-top: 1em;
+}
+
+.loginLabels{
+    padding-top: 3em;
+}
+
+.loginInput{
+    width: 100%;
+    background-color: #292929;
+    border: none;
+    color: #808080
+}
+
+.loginInput:hover{
+    color:white;
+    background-color: black;
+}
+
+.entryButton{
+    width: 40%;
+    height: 3em;
+    background-color: #151515;
+    border: solid #808080 2px;
+    color: #808080;
+}
+
+.entryButton:hover{
+    color:white;
+    border: solid white 2px;
+    background-color: black;
+}
+
+.optionsGroup{
+    width:75%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 2em;
+    margin:auto;
+}
+
+.options{
+    width:100%;
+    font-size: 12px;
+    cursor:pointer;
+}
+
+.options:hover{
+    color:white;
+}
+
+
+.registerMain{
+    width: 75%;
+    margin: auto;
+    text-align: center;
+}
+
+.registerLabels{
+    padding-top: 1em;
+}
+
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Employee Reimbursement</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
+        <script type="text/javascript" src="pageControl.js"></script>
+    </head>
+
+    <body>
+        <div class="page">
+            <div id="loginBox">
+                <div class="boxHeader">
+                    <h2>Employee Login</h2>
+                </div>
+                <div class="loginMain">
+                    <div class="inputGroup">
+                        <p class="loginLabels">Username:</p>
+                        <input class="loginInput" type="text" ><hr>
+                        <p class="loginLabels">Password:</p>
+                        <input class="loginInput" type="text" ><hr>
+                        <button class="entryButton mt5">Login</button>
+                    </div>
+                    <div class="optionsGroup">
+                        <p class="options" onclick="showRegister()">register</p>
+                        <p class="options">forgot username or password</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="registerBox">
+                <div class="boxHeader">
+                    <h2>New User</h2>
+                </div>
+                <div class="registerMain pt1">
+                    <p class="registerLabels">First Name:</p>
+                    <input class="loginInput" type="text"><hr>
+                    <p class="registerLabels">Last Name:</p>
+                    <input class="loginInput" type="text"><hr>
+                    <p class="registerLabels">Email Address:</p>
+                    <input class="loginInput" type="text"><hr>
+                    <p class="registerLabels">Username:</p>
+                    <input class="loginInput" type="text"><hr>
+                    <p class="registerLabels">Password:</p>
+                    <input class="loginInput" type="text"><hr>
+                    <button onclick="showLogin()" class="entryButton mt4">Cancel</button>
+                    <button class="entryButton">Register</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
