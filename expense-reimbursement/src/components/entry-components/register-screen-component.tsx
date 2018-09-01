@@ -1,12 +1,13 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
+import './entry-styles.css';
 
 export class RegisterScreen extends React.Component
 {
     public render()
     {
         return(
-            <div id="registerBox" className="loginBox">
+            <div className="loginScreen">
                 <div className="boxHeader">
                     <h2>New User</h2>
                 </div>

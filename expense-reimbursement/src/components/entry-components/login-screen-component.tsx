@@ -1,6 +1,7 @@
 import * as React from 'react';
 import {Link} from 'react-router-dom';
 import {RouteComponentProps} from 'react-router';
+import './entry-styles.css';
 
 interface IState
 {
@@ -25,7 +26,7 @@ export class LoginScreen extends React.Component<RouteComponentProps<{}>, IState
     public render()
     {
         return(
-            <div id="loginBox" className="loginBox">
+            <div className="loginScreen">
                 <div className="boxHeader">
                     <h2>Employee Login</h2>
                 </div>
@@ -89,13 +90,18 @@ export class LoginScreen extends React.Component<RouteComponentProps<{}>, IState
             }
             else if(resp.status === 200)
             {
+                const header = document.getElementById("pageHeader");
+                if(header != null)
+                {
+                    header.style.display = "block";
+                }
                 return resp.json();
             }
             throw Error("Username or Password were incorrect");
         })
         .then(resp => {
             localStorage.setItem("user", JSON.stringify(resp))
-            this.props.history.push("/register");
+            this.props.history.push("/employee");
         })
         .catch(err => {
             console.log(err);

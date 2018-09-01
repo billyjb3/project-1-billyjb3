@@ -1,128 +1,52 @@
 *{
   margin:0;
+  padding: 0;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
-.entryContainer{
+body{
+  position: fixed;
   width: 100vw;
   height: 100vh;
   background-color: #909090;
   background-image: url("res/mistyTreesBack.jpg");
-  background-size: cover;
+  background-size: 100vw 100vh;
 }
 
-
-.loginBox{
-  position: absolute;
-  width: 27em;
-  height: 37em;
-  bottom: 0;
-  left: 0;
-  right:0;
-  top:0;
+.ticketsDiv{
+  position: relative;
+  width: 90%;
+  height: 32em;
+  top: 4em;
   margin: auto;
-  background-color: #303030;
+  background-color: transparent;
   color: #808080;
-  opacity: .75;
-  border: solid 1px #101010;
+  opacity: .85;
 }
 
-.boxHeader{
+.ticketTable{
   width: 100%;
-  height: 4em;
-  line-height: 4em;
-  text-align: center;
-  font-weight: bold;
-  background-color: #151515
+  table-layout: fixed;
+  border-collapse: collapse;
+  border: solid 1px black;
 }
 
-.loginMain{
-  width: 100%;
-  height: 85%;
-  text-align: center;
-}
-
-.inputGroup{
-  width: 75%;
-  margin: auto;
-  padding-top: 1em;
-}
-
-.loginLabels{
-  padding-top: 3em;
-}
-
-.loginInput{
-  width: 100%;
-  background-color: #292929;
-  border: none;
-  color: #808080;
-  transition: .35s;
-}
-
-.loginInput:hover{
-  color:white;
-  background-color: black;
-}
-
-.entryButton{
-  width: 40%;
-  height: 3em;
-  margin-left: 1em;
-  margin-right: 1em;
+th{
   background-color: #151515;
-  border: solid #808080 2px;
-  color: #808080;
-  transition: .5s;
 }
-
-.entryButton:hover{
-  color:white;
-  border: solid white 2px;
-  background-color: black;
-}
-
-.optionsGroup{
-  width:75%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding-bottom: 2em;
-  margin:auto;
-}
-
-.options{
-  display: inline;
-  font-size: 12px;
-  cursor:pointer;
-  text-decoration: none;
-  color: #808080;
-  transition: .6s;
-}
-
-.options:hover{
-  color:white;
-  border-bottom: 1px solid black;
-}
-
-
-.registerMain{
-  width: 75%;
-  margin: auto;
+td{
   text-align: center;
+  border: solid 1px #151515;
 }
 
-.registerLabels{
-  padding-top: 1em;
+tr:nth-child(even){
+  background-color: #151825;
+}
+tr:nth-child(odd){
+  background-color: #152025;
 }
 
-.mainPage{
-  width: 100%;
-  height: 100%;
-  background-color: #303030;
-  opacity: .6;
-}
+
 
 .pt5{
   padding-top: 5em;

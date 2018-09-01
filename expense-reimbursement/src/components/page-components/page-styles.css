@@ -1,0 +1,21 @@
+.pageBackground{
+  position: absolute;
+  width: 90%;
+  height: 100vh;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: #151515;
+  opacity: .75;
+}
+
+.pageContent{
+  position: absolute;
+  width: 90%;
+  height: 100vh;
+  left: 0; 
+  right: 0;
+  margin: auto;
+  border-left: solid 1px black;
+  border-right: solid 1px black;
+}
