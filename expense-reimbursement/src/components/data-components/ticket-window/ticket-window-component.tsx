@@ -1,4 +1,5 @@
 import * as React from 'react';
+import './ticket-window-styles.css';
 
 export class TicketWindow extends React.Component
 {

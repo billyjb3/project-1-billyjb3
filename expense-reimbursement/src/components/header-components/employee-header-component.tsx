@@ -7,7 +7,7 @@ export class EmployeeHeader extends React.Component
     public render()
     {
         const text = ["Home", "Tickets", "Account"];
-        const path = ["/employee", "/employee/tickets", "/employee/account"];
+        const path = ["/employee-home", "/employee-tickets", "/employee-account"];
 
         return(
             <div className="pageHeader" id="pageHeader">

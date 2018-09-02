@@ -1,14 +1,17 @@
 import * as React from 'react';
-import {Page} from '../page-components/page-component';
+import '../page-styles.css';
 
 export class EmployeeHome extends React.Component
 {
     public render()
     {
         return(
-            <Page>
-
-            </Page>
+            <div className="pageContainer">
+                <div className="pageBackground"></div>
+                <div className="pageContent">
+                    <p>HOME!</p>
+                </div>
+            </div>
         )
     }
 }

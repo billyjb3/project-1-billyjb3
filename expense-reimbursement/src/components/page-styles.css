@@ -1,9 +1,18 @@
+
+
+.pageContainer{
+  position: relative;
+  width: 90vw;
+  height: 100vh;
+  margin: auto;
+}
+
 .pageBackground{
   position: absolute;
   width: 90%;
-  height: 100vh;
-  left: 0;
-  right: 0;
+  height: 100%;
+  left: 0; 
+  right: 0; 
   margin: auto;
   background-color: #151515;
   opacity: .75;
@@ -12,8 +21,8 @@
 .pageContent{
   position: absolute;
   width: 90%;
-  height: 100vh;
-  left: 0; 
+  height: 100%;
+  left: 0;
   right: 0;
   margin: auto;
   border-left: solid 1px black;

@@ -37,4 +37,17 @@ router.post('/login', async (req, resp) => {
         console.log(err);
         resp.sendStatus(500);
     }
+});
+
+router.post("/register", async (req, resp) => {
+    try
+    {
+        const stat = await dao.createUser(req.body);
+        resp.sendStatus(200);
+    }
+    catch(err)
+    {
+        console.log(err);
+        resp.sendStatus(500);
+    }
 })

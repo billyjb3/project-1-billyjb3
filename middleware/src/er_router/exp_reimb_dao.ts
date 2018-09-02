@@ -30,3 +30,24 @@ export async function verifyUser(username: string, password: string)
         client.release();
     }
 }
+
+export async function createUser(user)
+{
+    const username = user.username;
+    const password = user.password;
+    const firstname = user.firstname;
+    const lastname = user.lastname;
+    const email = user.email;
+    const role = user.role;
+
+    const client = await connectionPool.connect();
+    try
+    {
+        const resp = await client.query("INSERT INTO "+users+" (ers_username, ers_password, user_first_name, user_last_name, user_email, user_role_id) VALUES ($1, $2, $3, $4, $5, $6)", [username, password, firstname, lastname, email, role] );
+        return resp;
+    }
+    finally
+    {
+        client.release();
+    }
+}

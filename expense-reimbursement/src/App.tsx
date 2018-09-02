@@ -17,8 +17,8 @@ class App extends React.Component {
           <Switch>
             <Route path="/login" component={LoginScreen}/>
             <Route path="/register" component={RegisterScreen}/>
-            <Route path="/employee" component={EmployeeHome}/>
-            <Route path="/employee/tickets" compoent={EmployeeTickets}/>
+            <Route path="/employee-tickets" component={EmployeeTickets}/>
+            <Route path="/employee-home" component={EmployeeHome}/>
             <Route component={LoginScreen}/>
           </Switch>
         </div>
