@@ -101,6 +101,7 @@ export class LoginScreen extends React.Component<RouteComponentProps<{}>, IState
         })
         .then(resp => {
             localStorage.setItem("user", JSON.stringify(resp))
+            alert(localStorage.getItem("user"));
             this.props.history.push("/employee-home");
         })
         .catch(err => {

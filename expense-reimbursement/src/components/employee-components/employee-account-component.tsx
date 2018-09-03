@@ -1,20 +1,16 @@
 import * as React from 'react';
-import '../page-styles.css';
 import {EmployeeHeader} from '../header-components/employee-header-component';
-import {TicketWindow} from '../data-components/ticket-window/ticket-window-component';
-import {NewTicket} from '../data-components/new-ticket/new-ticket-component';
 
-export class EmployeeTickets extends React.Component
+export class EmployeeAccount extends React.Component
 {
     public render()
     {
-        return(
+        return (
             <div className="pageContainer">
                 <EmployeeHeader/>
                 <div className="pageBackground"></div>
                 <div className="pageContent">
-                    <NewTicket/>
-                    <TicketWindow/>
+                    <p>ACCOUNT!</p>
                 </div>
             </div>
         )

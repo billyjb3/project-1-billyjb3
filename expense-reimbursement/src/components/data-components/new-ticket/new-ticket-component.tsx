@@ -6,11 +6,23 @@ export class NewTicket extends React.Component
     public render()
     {
         return(
-            <div className="ticketInputDiv">
+            <div className="ticketInputDiv pt2">
                 <h2>Submit New Ticket</h2><hr/>
-                <input className="ticketInput" type="text" placeholder="amount"/>
-                <input className="ticketInput" type="text" placeholder="type"/>
-                <textarea className="ticketInput"/>
+                <div className="inputGrid mt1">
+                    <div className="inputBox">
+                        <p>Amount:</p>
+                        <input className="ticketInput" type="text" placeholder="amount"/><hr/>
+                        <p>Type:</p>
+                        <input className="ticketInput" type="text" placeholder="type"/><hr/>
+                    </div>
+                    <div className="inputBox">
+                        <p>Description:</p>
+                        <textarea className="ticketInput"/><hr/>
+                    </div>
+                    <div className="inputBox">
+                        <button>Submit</button>
+                    </div>
+                </div>
             </div>
         )
     }

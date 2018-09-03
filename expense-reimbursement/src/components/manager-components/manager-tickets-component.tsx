@@ -1,17 +1,17 @@
 import * as React from 'react';
-import {EmployeeHeader} from '../header-components/employee-header-component';
+import {ManagerHeader} from '../header-components/manager-header-component';
 import '../page-styles.css';
 
-export class EmployeeHome extends React.Component
+export class ManagerTickets extends React.Component
 {
     public render()
     {
-        return(
+        return (
             <div className="pageContainer">
-                <EmployeeHeader/>
+                <ManagerHeader/>
                 <div className="pageBackground"></div>
                 <div className="pageContent">
-                    <p>HOME!</p>
+                    <p>Tickets!</p>
                 </div>
             </div>
         )

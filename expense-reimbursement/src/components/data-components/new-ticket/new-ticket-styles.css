@@ -4,9 +4,22 @@
     width: 90%;
     margin: auto;
     text-align: center;
-    color: #505050;
+    color: #808080;
+}
+
+.inputGrid{
+    width: 80%;
+    display: inline-grid;
+    grid-template-columns: 40% 40% 20%;
+}
+
+.inputBox{
+    width: 90%;
+    text-align: center;
 }
 
 .ticketInput{
-    background-color: #151825;
+    background-color: #252525;
+    width: 100%;
+    border: none;
 }

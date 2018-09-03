@@ -2,7 +2,7 @@ import * as React from 'react';
 import {ReimbTitle} from './reimb-title-component';
 import {Navbar} from './nav-components/navbar-component';
 
-export class EmployeeHeader extends React.Component
+export class ManagerHeader extends React.Component
 {
     constructor(props: any)
     {
@@ -12,7 +12,7 @@ export class EmployeeHeader extends React.Component
     public render()
     {
         const text = ["Home", "Tickets", "Account"];
-        const path = ["/employee-home", "/employee-tickets", "/employee-account"];
+        const path = ["/manager-home", "/manager-tickets", "/manager-account"];
 
         return(
             <div className="pageHeader" id="pageHeader">

@@ -1,6 +1,7 @@
 import * as React from 'react';
 import './nav-styles.css';
 import {NavButton} from './nav-button-component';
+import {LogoutButton} from './logout-button-component';
 
 interface IProps
 {
@@ -19,6 +20,7 @@ export const Navbar: React.StatelessComponent<IProps> = (props) =>
     return (
         <div className="navbar">
             {buttons}
+            <LogoutButton/>
         </div>
     )
 }

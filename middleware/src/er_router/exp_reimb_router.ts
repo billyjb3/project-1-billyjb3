@@ -42,8 +42,15 @@ router.post('/login', async (req, resp) => {
 router.post("/register", async (req, resp) => {
     try
     {
-        const stat = await dao.createUser(req.body);
-        resp.sendStatus(200);
+        const user = await dao.createUser(req.body);
+        if(user)
+        {
+            resp.sendStatus(200);
+        }
+        else
+        {
+            resp.sendStatus(401);
+        }
     }
     catch(err)
     {
